@@ -2,15 +2,11 @@
   "development": {
     "host": "0.0.0.0",
     "port": 7080,
-    "db": "postgresql://dev:Feng,HK,4778!@localhost:5432/dev",
-    "appid": "wx2a2376ed91dffab6",
-    "secret": "e34f657c631421e77de0a078979439c0"
+    "db": "postgresql://dev:Feng,HK,4778!@localhost:5432/dev"
   },
   "production": {
     "host": "0.0.0.0",
     "port": 8080,
-    "db": "postgresql://production:YzxSccEz7czw@localhost:5432/production",
-    "appid": "wx2a2376ed91dffab6",
-    "secret": "e34f657c631421e77de0a078979439c0"
+    "db": "postgresql://production:YzxSccEz7czw@localhost:5432/production"
   }
 }

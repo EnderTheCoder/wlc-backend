@@ -1,9 +1,12 @@
 cmake_minimum_required(VERSION 3.22)
-set(project_name vx-delivery-cpp)
+set(project_name wlc-backend)
 project(${project_name} VERSION 0.1.0)
 
 set(CMAKE_CXX_STANDARD 23)
-add_library(${project_name}-lib src/AppComponent.hpp src/DatabaseComponent.hpp)
+add_library(${project_name}-lib
+        src/AppComponent.hpp
+        src/DatabaseComponent.hpp
+        src/controller/AdminController.hpp src/db/WlcDb.hpp src/service/AdminService.hpp src/service/UserService.hpp src/service/User.hpp)
 
 target_include_directories(${project_name}-lib PUBLIC src)
 ## link libs
