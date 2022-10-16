@@ -7,9 +7,6 @@
 #include "oatpp/network/Server.hpp"
 #include "ServiceComponent.hpp"
 #include "DatabaseComponent.hpp"
-#include "controller/IotController.hpp"
-#include "controller/VxController.hpp"
-#include "WarehouseComponent.hpp"
 
 void run(const oatpp::base::CommandLineArguments& args) {
 

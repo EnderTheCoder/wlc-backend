@@ -5,5 +5,6 @@ create table if not exists wlc_submits
     type        varchar(16),
     user_id     integer,
     create_time bigint,
-    content     text
+    content     text,
+    task_id     integer
 );

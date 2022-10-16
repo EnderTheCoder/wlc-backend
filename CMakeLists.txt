@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 23)
 add_library(${project_name}-lib
         src/AppComponent.hpp
         src/DatabaseComponent.hpp
-        src/controller/AdminController.hpp src/db/WlcDb.hpp src/service/AdminService.hpp src/service/UserService.hpp src/service/User.hpp)
+        src/controller/AdminController.hpp src/db/WlcDb.hpp src/service/AdminService.hpp src/service/UserService.hpp src/service/User.hpp src/service/Submit.hpp src/service/BaseClass.hpp)
 
 target_include_directories(${project_name}-lib PUBLIC src)
 ## link libs

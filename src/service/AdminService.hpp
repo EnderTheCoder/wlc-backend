@@ -5,10 +5,12 @@
 #ifndef WLC_BACKEND_ADMINSERVICE_HPP
 #define WLC_BACKEND_ADMINSERVICE_HPP
 
+#include "BaseClass.hpp"
 
-class AdminService {
+namespace wlc::service {
+    class AdminService : BaseClass{
 
-};
-
+    };
+}
 
 #endif //WLC_BACKEND_ADMINSERVICE_HPP

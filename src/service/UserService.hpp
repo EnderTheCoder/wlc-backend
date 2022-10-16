@@ -5,10 +5,10 @@
 #ifndef WLC_BACKEND_USERSERVICE_HPP
 #define WLC_BACKEND_USERSERVICE_HPP
 
+namespace wlc::service {
+    class UserService {
 
-class UserService {
-
-};
-
+    };
+}
 
 #endif //WLC_BACKEND_USERSERVICE_HPP

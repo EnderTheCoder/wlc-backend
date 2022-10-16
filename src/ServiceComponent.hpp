@@ -15,7 +15,7 @@
 #include "oatpp/core/macro/component.hpp"
 
 #include "oatpp/web/server/interceptor/AllowCorsGlobal.hpp"
-
+#include "service/User.hpp"
 class ServiceComponent {
 private:
     typedef oatpp::web::protocol::http::Status Status;
@@ -58,6 +58,10 @@ public:
         connectionHandler->addResponseInterceptor(std::make_shared<oatpp::web::server::interceptor::AllowCorsGlobal>());
         connectionHandler->setErrorHandler(std::make_shared<ErrorHandler>(objectMapper));
         return connectionHandler;
+    }());
+
+    OATPP_CREATE_COMPONENT(std::shared_ptr<wlc::service::User::Token>, token)([] {
+        return wlc::service::User::Token::createShared();
     }());
 
 
